@@ -1,0 +1,18 @@
+// Non mobile-first method
+@include griddle-build(2 3 4 5 6 12, '--large');
+
+// Tablets
+@media (max-width: $breakpoint-medium) {
+  @include griddle-build(2 3 4 6, '--medium');
+}
+
+// Phone
+@media (max-width: $breakpoint-small) {
+    @include griddle-build(2 3 4, '--small');
+}
+
+// Hack Griddle IE7
+.ie7 .grid__cell {
+  display: inline;
+  zoom: 1;
+}
