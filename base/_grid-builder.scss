@@ -4,11 +4,26 @@
 // Tablets
 @media (max-width: $breakpoint-medium) {
   @include griddle-build(2 3 4 6, '--medium');
+
+  .unit-1--medium {
+    width: 100%;
+  }
+
+  .hide--medium {
+    display: none;
+  }
 }
 
 // Phone
 @media (max-width: $breakpoint-small) {
-    @include griddle-build(2 3 4, '--small');
+  @include griddle-build(2 3 4, '--small');
+
+  .unit-1--small {
+    width: 100%;
+  }
+  .hide--small {
+    display: none;
+  }
 }
 
 // Hack Griddle IE7
